@@ -21,7 +21,6 @@
 			, <&pro_micro 20 GPIO_ACTIVE_HIGH>
 			, <&pro_micro 19 GPIO_ACTIVE_HIGH>
 			, <&pro_micro 18 GPIO_ACTIVE_HIGH>
-			, <&pro_micro 17 GPIO_ACTIVE_HIGH>
 			, <&pro_micro 15 GPIO_ACTIVE_HIGH>
 			, <&pro_micro 14 GPIO_ACTIVE_HIGH>
 			, <&pro_micro 10 GPIO_ACTIVE_HIGH>
@@ -37,20 +36,5 @@
 			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
-/*
-	encoder: encoder {
-		compatible = "alps,ec11";
-		label = "ENCODER";
-		a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <2>;
-		status = "okay";
-	};
-
-	sensors {
-		compatible = "zmk,keymap-sensors";
-		sensors = <&encoder>;
-	};
-*/
 
 };
