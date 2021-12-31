@@ -1,0 +1,9 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_3-8ths
+
+config ZMK_KEYBOARD_NAME
+	default "3-8ths"
+
+endif
