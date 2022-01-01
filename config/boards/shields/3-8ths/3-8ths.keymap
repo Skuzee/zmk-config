@@ -9,6 +9,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+
+/ {
+	conditional_layers {
+		compatible = "zmk,conditional-layers";
+        tri_layer {
+			if-layers = <1 2>;
+			then-layer = <3>;
+        };
+	};
+};
+
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -20,10 +32,10 @@
 				// | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  .   |  P   |
 				// | CTRL  | LGUI | LALT |  RAIS  | LOWR |   SPACE    |  ENTER  | DEL  | BSPC |
 			bindings = <
-				&kp ESC   &kp Q    &kp W    &kp E &kp R &kp T &kp Y &kp U   &kp I   &kp O
-				&kp TAB   &kp A    &kp S    &kp D &kp F &kp G &kp H &kp J   &kp K   &kp L
-				&kp LSHFT &kp Z    &kp X    &kp C &kp V &kp B &kp N &kp M   &kp DOT &kp P
-				&kp LCTRL &kp LGUI &kp LALT &mo 2 &mo 1 &kp SPACE &kp ENTER &kp DEL &kp BSPC
+				&kp ESC   &kp Q    &kp W    &kp E &kp R &kp T    &kp Y   &kp U     &kp I   &kp O
+				&kp TAB   &kp A    &kp S    &kp D &kp F &kp G     &kp H  &kp J     &kp K   &kp L
+				&kp LSHFT &kp Z    &kp X    &kp C &kp V &kp B     &kp N  &kp M     &kp DOT &kp P
+				&kp LCTRL &kp LGUI &kp LALT &mo 2 &mo 1 &kp SPACE &none &kp ENTER &kp DEL &kp BSPC
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -31,10 +43,10 @@
 
 		lower {
 			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &kp ENTER &trans &trans &trans
+				&kp BSPC &kp N1 &kp N2 &kp N3 &kp MINUS &none     &none &none  &none  &none
+				&kp CAPS &kp N4 &kp N5 &kp N6 &kp EQUAL &kp APOS  &none &none  &none  &none
+				&trans   &kp N7 &kp N8 &kp N9 &kp N0    &kp DOT   &none &none  &none  &none
+				&trans   &trans &trans &mo 3  &trans    &kp ENTER &none &trans &trans &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -42,19 +54,19 @@
 
 		raise {
 			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&kp DEL &kp HOME  &kp UP   &kp END   &kp SEMI &none    &none &none  &none  &none
+				&trans  &kp LEFT  &kp DOWN &kp RIGHT &kp FSLH &kp BSLH &none &none  &none  &none
+				&trans  &kp COMMA &kp DOT  &kp LBKT  &kp RBKT &none    &none &none  &none  &none
+				&trans  &trans    &trans   &mo 3    &trans   &trans   &none &trans &trans &trans
 			>;
 		};
 		
 		control {
 			bindings = <
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &trans &trans &trans &trans &trans
+				&kp GRAVE &kp F1 &kp F2 &kp F3 &kp F10 &none  &none &none  &none  &none
+				&trans    &kp F4 &kp F5 &kp F6 &kp F11 &none  &none &none  &none  &none
+				&trans    &kp F7 &kp F8 &kp F9 &kp F12 &none  &none &none  &none  &none
+				&trans    &trans &trans &trans &trans  &trans &none &trans &trans &trans
 			>;
 		};
 	};
