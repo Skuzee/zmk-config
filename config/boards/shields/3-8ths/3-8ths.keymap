@@ -55,18 +55,18 @@
 		raise {
 			bindings = <
 				&kp BSPC &kp HOME  &kp UP   &kp END   &kp SEMI &none    &none &none  &none  &none
-				&trans  &kp LEFT  &kp DOWN &kp RIGHT &kp FSLH &kp BSLH &none &none  &none  &none
-				&trans  &kp COMMA &kp DOT  &kp LBKT  &kp RBKT &none    &none &none  &none  &none
-				&trans  &trans    &trans   &mo 3    &trans   &trans   &none &trans &trans &trans
+				&trans   &kp LEFT  &kp DOWN &kp RIGHT &kp FSLH &kp BSLH &none &none  &none  &none
+				&trans   &kp COMMA &kp DOT  &kp LBKT  &kp RBKT &none    &none &none  &none  &none
+				&trans   &trans    &trans   &mo 3     &trans   &trans   &none &trans &trans &trans
 			>;
 		};
 		
 		control {
 			bindings = <
-				&kp GRAVE &kp F1 &kp F2 &kp F3 &kp F10 &none  &none &none  &none  &none
-				&trans    &kp F4 &kp F5 &kp F6 &kp F11 &none  &none &none  &none  &none
-				&trans    &kp F7 &kp F8 &kp F9 &kp F12 &none  &none &none  &none  &none
-				&trans    &trans &trans &trans &trans  &trans &none &trans &trans &trans
+				&kp GRAVE &kp F1 &kp F2 &kp F3 &kp F10 &rgb_ug RGB_HUI  &rgb_ug RGB_BRI &rgb_ug RGB_SPI &rgb_ug RGB_SAI &rgb_ug RGB_TOG
+				&trans    &kp F4 &kp F5 &kp F6 &kp F11 &rgb_ug RGB_HUD  &rgb_ug RGB_BRD &rgb_ug RGB_SPD &rgb_ug RGB_SAD &rgb_ug RGB_EFF
+				&trans    &kp F7 &kp F8 &kp F9 &kp F12 &none            &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR      &out OUT_TOG
+				&trans    &trans &trans &trans &trans  &trans           &none           &trans          &trans          &trans
 			>;
 		};
 	};
