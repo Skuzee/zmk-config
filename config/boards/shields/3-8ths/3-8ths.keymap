@@ -32,10 +32,10 @@
 				// | SHIFT |  Z   |  X   |  C   |  V   |  B   |   N   |  M    |  .   |  P   |
 				// | CTRL  | LGUI | LALT |  RAIS  | LOWR |   SPACE    |  ENTER  | DEL  | BSPC |
 			bindings = <
-				&kp ESC   &kp Q    &kp W    &kp E &kp R &kp T    &kp Y   &kp U     &kp I   &kp O
-				&kp TAB   &kp A    &kp S    &kp D &kp F &kp G     &kp H  &kp J     &kp K   &kp L
-				&kp LSHFT &kp Z    &kp X    &kp C &kp V &kp B     &kp N  &kp M     &kp DOT &kp P
-				&kp LCTRL &kp LGUI &kp LALT &mo 2 &mo 1 &kp SPACE &none &kp ENTER &kp DEL &kp BSPC
+				&kp ESC   &kp Q    &kp W    &kp E &kp R &kp T    &kp Y   &kp U     &kp I    &kp O
+				&kp TAB   &kp A    &kp S    &kp D &kp F &kp G     &kp H  &kp J     &kp K    &kp L
+				&kp LSHFT &kp Z    &kp X    &kp C &kp V &kp B     &kp N  &kp M     &kp DOT  &kp P
+				&kp LCTRL &kp LGUI &kp LALT &mo 2 &mo 1 &kp SPACE &none &kp ENTER  &kp BSPC &kp DEL
 			>;
 
 			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -43,7 +43,7 @@
 
 		lower {
 			bindings = <
-				&kp BSPC &kp N1 &kp N2 &kp N3 &kp MINUS &none     &none &none  &none  &none
+				&kp DEL &kp N1 &kp N2 &kp N3 &kp MINUS &none     &none &none  &none  &none
 				&kp CAPS &kp N4 &kp N5 &kp N6 &kp EQUAL &kp APOS  &none &none  &none  &none
 				&trans   &kp N7 &kp N8 &kp N9 &kp N0    &kp DOT   &none &none  &none  &none
 				&trans   &trans &trans &mo 3  &trans    &kp ENTER &none &trans &trans &trans
@@ -54,7 +54,7 @@
 
 		raise {
 			bindings = <
-				&kp DEL &kp HOME  &kp UP   &kp END   &kp SEMI &none    &none &none  &none  &none
+				&kp BSPC &kp HOME  &kp UP   &kp END   &kp SEMI &none    &none &none  &none  &none
 				&trans  &kp LEFT  &kp DOWN &kp RIGHT &kp FSLH &kp BSLH &none &none  &none  &none
 				&trans  &kp COMMA &kp DOT  &kp LBKT  &kp RBKT &none    &none &none  &none  &none
 				&trans  &trans    &trans   &mo 3    &trans   &trans   &none &trans &trans &trans
