@@ -109,3 +109,9 @@
  * Temporarily here because nice nano v2 spi is not defined on ZMk YET
  */
 
+&ext-power {
+	compatible = "zmk,ext-power-generic";
+	label = "EXT_POWER";
+	control-gpios = <&gpio0 38 GPIO_ACTIVE_HIGH>;
+	init-delay-ms = <10>;
+};
