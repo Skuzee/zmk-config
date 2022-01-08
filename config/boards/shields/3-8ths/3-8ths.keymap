@@ -110,5 +110,5 @@
  */
 
 / {
-	ext-power {control-gpios = <&gpio0 38 GPIO_ACTIVE_HIGH>; };
+	ext-power {control-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>; };
 };
