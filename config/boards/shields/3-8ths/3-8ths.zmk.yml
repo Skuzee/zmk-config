@@ -1,8 +1,0 @@
-file_format: "1"
-id: 3-8ths
-name: 3-8ths ortho 39key
-type: shield
-url: www.google.com
-requires: [nice!nano]
-features:
-  - keys

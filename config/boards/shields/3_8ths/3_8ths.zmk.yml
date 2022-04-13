@@ -1,0 +1,8 @@
+file_format: "1"
+id: 3-8ths
+name: 3/8ths ortho 39key
+type: shield
+url: https://github.com/Skuzee/zmk-config
+requires: [nice!nano]
+features:
+  - Complicated Obscure Multi-Layer Bean Dip Keymap
