@@ -4,6 +4,6 @@
 if SHIELD_3_8ths
 
 config ZMK_KEYBOARD_NAME
-	default "3/8ths"
+	default "3_8ths"
 
 endif
