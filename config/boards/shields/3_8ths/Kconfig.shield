@@ -1,5 +1,5 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_3-8ths
+config SHIELD_3_8ths
 	def_bool $(shields_list_contains,"3/8ths")
