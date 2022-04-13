@@ -14,4 +14,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: 3-8ths
+    shield: 3_8ths
