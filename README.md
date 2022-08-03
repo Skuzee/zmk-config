@@ -1,0 +1,1 @@
+<img src="/pics/0-keyboard.jpg" width="600" />
