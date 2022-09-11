@@ -1,6 +1,6 @@
 file_format: "1"
 id: 3_8ths
-name: 3/8ths ortho 39key
+name: 3_8ths ortho 39key
 type: shield
 url: https://github.com/Skuzee/zmk-config
 requires: [nice!nano]
